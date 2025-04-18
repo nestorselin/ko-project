@@ -45,15 +45,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "collapsible_tab_TpgQrC": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Size Chart",
-            "icon": "ruler",
-            "content": "",
-            "page": "{{ product.metafields.custom.rings_size_chart.value }}"
-          }
-        },
         "description": {
           "type": "description",
           "settings": {}
@@ -72,7 +63,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "collapsible_tab_TpgQrC",
         "description",
         "share"
       ],
