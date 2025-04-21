@@ -9,6 +9,14 @@
  */
 {
   "sections": {
+    "video_section_DV3wa9": {
+      "type": "video-section",
+      "settings": {
+        "video": "shopify://files/videos/Untitled Project.mp4",
+        "button_text": "Click me",
+        "button_link": "shopify://collections"
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -35,12 +43,6 @@
         "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
-      }
-    },
-    "video_section_DV3wa9": {
-      "type": "video-section",
-      "settings": {
-        "video": "shopify://files/videos/Untitled Project.mp4"
       }
     }
   },
