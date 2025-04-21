@@ -41,7 +41,7 @@
     
       {% if section.settings.button_text != blank and section.settings.button_link != blank %}
         <div class="video-overlay">
-          <a href="{{ section.settings.button_link }}" class="button">{{ section.settings.button_text }}</a>
+          <a href="{{ section.settings.button_link }}" class="button video-button">{{ section.settings.button_text }}</a>
         </div>
       {% endif %}
     </div>
@@ -67,14 +67,9 @@
         z-index: 2;
       }
     
-      .video-btn {
-        padding: 12px 24px;
-        background-color: rgba(255,255,255,0.9);
+      .video-button {
+        background-color: rgba(255,255,255,0.6);
         color: #000;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 6px;
-        transition: background-color 0.3s ease;
       }
     
       .video-btn:hover {
