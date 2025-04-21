@@ -14,7 +14,7 @@
       "settings": {
         "video": "shopify://files/videos/Untitled Project.mp4",
         "button_text": "View all",
-        "button_link": "shopify://collections"
+        "button_link": "shopify://collections/all"
       }
     },
     "featured_collection": {
