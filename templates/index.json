@@ -13,7 +13,7 @@
       "type": "video-section",
       "settings": {
         "video": "shopify://files/videos/Untitled Project.mp4",
-        "button_text": "Click me",
+        "button_text": "View all",
         "button_link": "shopify://collections"
       }
     },
