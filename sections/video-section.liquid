@@ -1,0 +1,44 @@
+{% schema %}
+    {
+      "name": "Full Width Video",
+      "tag": "section",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Full Width Video",
+          "category": "Video"
+        }
+      ]
+    }
+    {% endschema %}
+    
+    <div class="video-container">
+      {% if section.settings.video %}
+        {{
+          section.settings.video
+          | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true, class: 'full-video'
+        }}
+      {% else %}
+        <p>Please upload a video from the section settings.</p>
+      {% endif %}
+    </div>
+    
+    <style>
+      .video-container {
+        width: 100%;
+        overflow: hidden;
+      }
+    
+      .video-container .full-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+      }
+    </style>
+    
