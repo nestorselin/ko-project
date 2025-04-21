@@ -7,6 +7,17 @@
           "type": "video",
           "id": "video",
           "label": "Video"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Click me"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
         }
       ],
       "presets": [
@@ -27,10 +38,17 @@
       {% else %}
         <p>Please upload a video from the section settings.</p>
       {% endif %}
+    
+      {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+        <div class="video-overlay">
+          <a href="{{ section.settings.button_link }}" class="video-btn">{{ section.settings.button_text }}</a>
+        </div>
+      {% endif %}
     </div>
     
     <style>
       .video-container {
+        position: relative;
         width: 100%;
         overflow: hidden;
       }
@@ -39,6 +57,28 @@
         width: 100vw;
         height: 100vh;
         object-fit: cover;
+      }
+    
+      .video-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+      }
+    
+      .video-btn {
+        padding: 12px 24px;
+        background-color: rgba(255,255,255,0.9);
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 6px;
+        transition: background-color 0.3s ease;
+      }
+    
+      .video-btn:hover {
+        background-color: rgba(255,255,255,1);
       }
     </style>
     
