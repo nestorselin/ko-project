@@ -17,6 +17,12 @@
         "button_link": "shopify://collections/all"
       }
     },
+    "all_collections_nMwnhe": {
+      "type": "all-collections",
+      "settings": {
+        "title": ""
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -48,6 +54,7 @@
   },
   "order": [
     "video_section_DV3wa9",
+    "all_collections_nMwnhe",
     "featured_collection"
   ]
 }
