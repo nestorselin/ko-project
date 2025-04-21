@@ -9,21 +9,6 @@
  */
 {
   "sections": {
-    "video_QRVFhy": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/Untitled Project.mp4",
-        "video_url": "",
-        "description": "",
-        "full_width": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -51,10 +36,16 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "video_section_DV3wa9": {
+      "type": "video-section",
+      "settings": {
+        "video": "shopify://files/videos/Untitled Project.mp4"
+      }
     }
   },
   "order": [
-    "video_QRVFhy",
+    "video_section_DV3wa9",
     "featured_collection"
   ]
 }
