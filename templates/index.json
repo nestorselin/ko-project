@@ -14,7 +14,7 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "enable_video_looping": false,
+        "enable_video_looping": true,
         "video": "shopify://files/videos/Untitled Project.mp4",
         "video_url": "",
         "description": "",
