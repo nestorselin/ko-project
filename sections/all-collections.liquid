@@ -1,0 +1,99 @@
+{% schema %}
+{
+"name": "Scrollable Collections",
+"tag": "section",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Section Title",
+"default": "Our Collections"
+}
+],
+"presets": [
+{
+"name": "Scrollable Collections",
+"category": "Collections"
+}
+]
+}
+{% endschema %}
+
+<div class="collections-container page-width">
+    {% if section.settings.title != blank %}
+    <h2 class="section-title">{{ section.settings.title }}</h2>
+    {% endif %}
+
+    <div class="collections-scroll">
+        {% for collection in collections %}
+        <div class="collection-item">
+            <a href="{{ collection.url }}" class="collection-link">
+                {% if collection.featured_image %}
+                <img src="{{ collection.featured_image | image_url: width: 600 }}" alt="{{ collection.title }}"
+                    class="collection-image">
+                {% else %}
+                <div class="placeholder-image"></div>
+                {% endif %}
+                <h3 class="collection-title">{{ collection.title }}</h3>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+    .collections-container {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .collections-scroll {
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+        padding-bottom: 12px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .collection-item {
+        flex: 0 0 auto;
+        width: 220px;
+        border-radius: 8px;
+        overflow: hidden;
+        scroll-snap-align: start;
+        transition: transform 0.3s ease;
+    }
+
+    .collection-item:hover {
+        transform: translateY(-4px);
+    }
+
+    .collection-image,
+    .placeholder-image {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        background-color: #f2f2f2;
+    }
+
+    .collection-title {
+        margin-top: 12px;
+        font-size: 16px;
+        text-align: center;
+        color: #333;
+    }
+
+    /* Hide scrollbar visually (optional) */
+    .collections-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .collections-scroll {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
