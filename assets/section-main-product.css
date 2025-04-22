@@ -60,6 +60,9 @@ product-info {
   }
 }
 
+.product--right .product__media-list{
+   --grid-desktop-horizontal-spacing: 12px;
+}
 
 @media screen and (min-width: 990px) {
   .product--large:not(.product--no-media) .product__media-wrapper {
