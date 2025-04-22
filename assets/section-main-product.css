@@ -60,9 +60,6 @@ product-info {
   }
 }
 
-.product--right .product__media-list{
-  column-gap: 12px !important;
-}
 
 @media screen and (min-width: 990px) {
   .product--large:not(.product--no-media) .product__media-wrapper {
