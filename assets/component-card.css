@@ -476,6 +476,7 @@
 
 .card-information > .price {
   color: rgb(var(--color-foreground));
+  margin-top: 4px;
 }
 
 .card--horizontal .card-information > .price {
