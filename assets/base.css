@@ -101,7 +101,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 a:hover{
-  color: #424242;
   text-decoration: underline;
   text-decoration-color: #000;
 }
