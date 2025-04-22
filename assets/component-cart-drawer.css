@@ -187,6 +187,7 @@ cart-drawer {
 cart-drawer-items {
   overflow: auto;
   flex: 1;
+  margin-right: -3px;
 }
 
 @media screen and (max-height: 650px) {
