@@ -78,7 +78,8 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 
 .drawer__heading {
   margin: 0;
-  font-size: 20px;
+  font-size: 14px;
+  letter-spacing: 0;
 }
 
 .drawer__close {
