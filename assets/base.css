@@ -2511,6 +2511,10 @@ input[type='checkbox'] {
   justify-content: center;
 }
 
+.header__icon span:hover{
+  opacity: 0.6;
+}
+
 .header__icon {
   color: rgb(var(--color-foreground));
 }
