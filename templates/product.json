@@ -52,7 +52,7 @@
         "media_size": "large",
         "constrain_to_viewport": false,
         "media_fit": "cover",
-        "gallery_layout": "columns",
+        "gallery_layout": "stacked",
         "mobile_thumbnails": "hide",
         "media_position": "right",
         "image_zoom": "lightbox",
