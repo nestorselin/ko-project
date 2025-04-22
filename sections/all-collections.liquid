@@ -78,7 +78,6 @@
         opacity: 0;
         top: 0;
         left: 0;
-        background-color: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(8px);
         border-radius: 100%;
     }
@@ -87,8 +86,8 @@
         opacity: 1;
     }
 
-    .collections-scroll:hover .collection-item:hover img{
-        filter: blur(0px);
+    .collections-scroll:hover .collection-item:hover .collection-link::after{
+        opacity: 0;
     }
 
     .collection-image,
