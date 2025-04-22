@@ -85,7 +85,6 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 .drawer__close {
   display: inline-block;
   padding: 0;
-  box-shadow: 0 0 0 0.2rem rgba(var(--color-button), 0);
   position: absolute;
   top: 30px;
   right: 0px;
@@ -93,6 +92,7 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  line-height: 1.5;
 }
 
 .cart-drawer__warnings .drawer__close {
