@@ -551,6 +551,8 @@ hr {
   text-decoration: none;
   color: currentColor;
   display: block;
+  font-size: 14px;
+  text-underline-offset: 3px;
 }
 
 .placeholder {
