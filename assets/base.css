@@ -2563,7 +2563,7 @@ input[type='checkbox'] {
   width: 100%;
   display: block;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .header__icon--account shop-user-avatar {
