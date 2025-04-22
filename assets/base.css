@@ -2562,7 +2562,8 @@ input[type='checkbox'] {
   width: 100%;
   display: block;
   position: absolute;
-  background: rgba(var(--color-foreground), 0.5);
+  backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .header__icon--account shop-user-avatar {
