@@ -229,10 +229,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   display: none;
 }
 
-.menu-drawer .list-social__link {
-  padding: 1.1rem 1.1rem;
-}
-
 @media screen and (max-width: 749px) {
   .menu-drawer.country-selector-open {
     transform: none !important;
