@@ -103,6 +103,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 a:hover{
   opacity: 0.6;
   text-decoration: underline;
+  text-decoration-color: #000;
 }
 
 @media screen and (min-width: 750px) {
