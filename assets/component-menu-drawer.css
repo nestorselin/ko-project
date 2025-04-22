@@ -3,6 +3,10 @@
   text-decoration: none;
 }
 
+.header__icon--menu:hover {
+  text-decoration: underline;
+}
+
 .js menu-drawer > details > summary::before,
 .js menu-drawer > details[open]:not(.menu-opening) > summary::before {
   content: '';
