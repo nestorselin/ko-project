@@ -35,7 +35,9 @@ menu-drawer > details[open] > summary::before {
   top: 100%;
   width: 100%;
   padding: 0;
-  background-color: rgb(var(--color-background));
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
   overflow-x: hidden;
   filter: drop-shadow(
     var(--drawer-shadow-horizontal-offset) var(--drawer-shadow-vertical-offset) var(--drawer-shadow-blur-radius)
