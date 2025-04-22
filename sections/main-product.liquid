@@ -663,7 +663,15 @@
             {{ 'products.product.view_full_details' | t }}
             {{- 'icon-arrow.svg' | inline_asset_content -}}
           </a>
-        </section>
+          {%- if product.metafields.custom.size_chart != blank -%}
+            <div class="size-chart">
+              <a href="{{ product.metafields.custom.size_chart.url }}" target="_blank">
+                {{ product.metafields.custom.size_chart.title }}
+              </a>
+            </div>
+          {%- endif -%}
+          
+          </section>
       </div>
     </div>
 
