@@ -78,7 +78,6 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 
 .drawer__heading {
   margin: 0;
-  font-size: 14px;
   letter-spacing: 0;
 }
 
@@ -86,7 +85,7 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   display: inline-block;
   padding: 0;
   position: absolute;
-  top: 30px;
+  top: 34px;
   right: 0px;
   color: rgb(var(--color-foreground));
   background-color: transparent;
