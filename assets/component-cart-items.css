@@ -133,6 +133,13 @@ cart-remove-button .button {
   color: var(--mid-gray);
 }
 
+@media screen and (min-width: 750px) {
+  cart-remove-button .button {
+    margin-left: 14px;
+  }
+  
+}
+
 cart-remove-button .button:before,
 cart-remove-button .button:after {
   content: none;
