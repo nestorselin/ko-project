@@ -1,32 +1,33 @@
 {% schema %}
+   {
+  "name": "Reviews",
+  "settings": [],
+  "blocks": [
     {
-      "name": "Reviews",
-      "settings": [],
-      "blocks": [
+      "type": "review",
+      "name": "Review",
+      "settings": [
         {
-          "type": "review",
-          "name": "Review",
-          "settings": [
-            {
-              "type": "richtext",
-              "id": "review_text",
-              "label": "Review Text"
-            },
-            {
-              "type": "text",
-              "id": "reviewer_name",
-              "label": "Reviewer Name"
-            }
-          ]
-        }
-      ],
-      "max_blocks": 10,
-      "presets": [
+          "type": "richtext",
+          "id": "review_text",
+          "label": "Review Text"
+        },
         {
-          "name": "Customer Reviews"
+          "type": "text",
+          "id": "reviewer_name",
+          "label": "Reviewer Name"
         }
       ]
     }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Customer Reviews"
+    }
+  ]
+}
+
     {% endschema %}
     
     <div class="reviews-section">
