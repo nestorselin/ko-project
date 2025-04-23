@@ -453,7 +453,13 @@
 
 .policies {
   display: flex;
+  
+}
+
+.footer__copyright{
+  display: flex;
   flex-direction: column-reverse;
+  align-items: flex-end;
 }
 
 .policies li {
