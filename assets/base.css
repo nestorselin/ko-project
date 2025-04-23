@@ -398,7 +398,7 @@ blockquote {
 .field__input,
 .form__label,
 .select__select {
-  font-size: 14px;
+  font-size: 12px;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
 }
 
