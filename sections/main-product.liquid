@@ -462,7 +462,9 @@
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 
                 {% if product.metafields.custom.preorder %}
-                  <div class="preorder-banner">Avarage order fullfilment time: 2 weeks</div>
+                  <div class="preorder-banner">Avarage order fullfilment time: 2 weeks.
+                    <a href="/preorder">Learn more</a>
+                  </div>
                 {% endif %}
                 
               {%- when 'buy_buttons' -%}
