@@ -76,6 +76,13 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   align-items: center;
 }
 
+@media screen and (max-width: 749px) {
+  .drawer__header {
+    padding: 20px 0;
+  }
+  
+}
+
 .drawer__heading {
   margin: 0;
   letter-spacing: 0;
