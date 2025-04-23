@@ -324,6 +324,7 @@ a.product__text {
 .product__tax {
   margin-top: -1.4rem;
   color: var(--light-gray);
+  display: none;
 }
 
 .product--no-media .share-button {
