@@ -236,6 +236,7 @@ product-info {
 
 .product__text {
   margin-bottom: 0;
+  font-size: 14px;
 }
 
 a.product__text {
