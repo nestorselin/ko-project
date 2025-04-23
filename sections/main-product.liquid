@@ -683,6 +683,16 @@
       </div>
     </div>
 
+    <style>
+      .preorder-banner{
+        margin: 0;
+        height: 44px;
+        line-height: 44px;
+        padding: 0 20px;
+        background-color: var(--lightest-gray);
+      }
+    </style>
+
     {% render 'product-media-modal', variant_images: variant_images %}
 
     {% assign popups = section.blocks | where: 'type', 'popup' %}
