@@ -250,6 +250,12 @@
     {%- endunless -%}
   {%- endif -%}
 
+  <div class="footer__column footer__column--info">
+    {%- if section.settings.payment_enable -%}
+      <img class="payment-options" src="https://cdn.shopify.com/s/files/1/0940/5936/4617/files/payments.svg?v=1745416359">
+    {%- endif -%}
+  </div>
+
   <div
     class="footer__content-bottom{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
@@ -282,11 +288,7 @@
           </localization-form>
         {%- endif -%}
       </div>
-      <div class="footer__column footer__column--info">
-        {%- if section.settings.payment_enable -%}
-          <img class="payment-options" src="https://cdn.shopify.com/s/files/1/0940/5936/4617/files/payments.svg?v=1745416359">
-        {%- endif -%}
-      </div>
+
     </div>
 
     
