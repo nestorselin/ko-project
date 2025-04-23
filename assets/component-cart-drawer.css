@@ -80,6 +80,10 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   .drawer__header {
     padding: 20px 0;
   }
+
+  .drawer__close{
+    top: 24px;
+  }
   
 }
 
