@@ -213,10 +213,6 @@ product-info {
   color: rgb(var(--color-foreground));
 }
 
-.shopify-payment-button__button {
-  font-size: 1.5rem;
-}
-
 /* Product info */
 
 .product__info-container > * + * {
