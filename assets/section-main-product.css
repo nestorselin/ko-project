@@ -236,6 +236,7 @@ product-info {
 
 .product__info-container .product__description{
   font-size: 14px;
+  color: var(--light-gray);
 }
 
 .product__text {
