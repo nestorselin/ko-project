@@ -1,0 +1,62 @@
+{% schema %}
+    {
+      "name": "Reviews",
+      "settings": [],
+      "blocks": [
+        {
+          "type": "review",
+          "name": "Review",
+          "settings": [
+            {
+              "type": "richtext",
+              "id": "review_text",
+              "label": "Review Text"
+            },
+            {
+              "type": "text",
+              "id": "reviewer_name",
+              "label": "Reviewer Name"
+            }
+          ]
+        }
+      ],
+      "max_blocks": 10,
+      "presets": [
+        {
+          "name": "Customer Reviews"
+        }
+      ]
+    }
+    {% endschema %}
+    
+    <div class="reviews-section">
+      {% for block in section.blocks %}
+        <div class="review">
+          <div class="review-text">
+            {{ block.settings.review_text }}
+          </div>
+          <div class="reviewer-name">
+            — {{ block.settings.reviewer_name }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    
+    <style>
+      .reviews-section {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      .review {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .reviewer-name {
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: right;
+      }
+    </style>
+    
