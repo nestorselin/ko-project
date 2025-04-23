@@ -1621,7 +1621,7 @@ details[open] > .share-button__fallback {
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(var(--color-foreground), 0.75);
 }
 
