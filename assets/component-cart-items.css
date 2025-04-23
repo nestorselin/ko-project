@@ -132,6 +132,7 @@ cart-remove-button .button {
   min-height: 4.5rem;
   padding: 0;
   margin: 0 0.1rem 0.1rem 0;
+  color: var(--mid-gray);
 }
 
 cart-remove-button .button:before,
