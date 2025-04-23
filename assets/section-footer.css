@@ -461,10 +461,6 @@
   align-items: center;
 }
 
-.policies li::before {
-  content: '\00B7';
-  padding: 0 0.8rem;
-}
 
 .policies li a {
   padding: 0.6rem 0;
