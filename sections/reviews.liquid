@@ -1,5 +1,20 @@
+<div class="reviews-scroll-wrapper">
+  <div class="reviews-scroll">
+    {% for block in section.blocks %}
+      <div class="review-card">
+        <div class="review-text">
+          {{ block.settings.review_text }}
+        </div>
+        <div class="reviewer-name">
+          — {{ block.settings.reviewer_name }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
 {% schema %}
-   {
+{
   "name": "Reviews",
   "settings": [],
   "blocks": [
@@ -20,44 +35,64 @@
       ]
     }
   ],
-  "max_blocks": 10,
+  "max_blocks": 20,
   "presets": [
     {
       "name": "Customer Reviews"
     }
   ]
 }
+{% endschema %}
 
-    {% endschema %}
-    
-    <div class="reviews-section">
-      {% for block in section.blocks %}
-        <div class="review">
-          <div class="review-text">
-            {{ block.settings.review_text }}
-          </div>
-          <div class="reviewer-name">
-            — {{ block.settings.reviewer_name }}
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-    
-    <style>
-      .reviews-section {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 40px 20px;
-      }
-      .review {
-        margin-bottom: 30px;
-        font-size: 16px;
-        line-height: 1.6;
-      }
-      .reviewer-name {
-        margin-top: 10px;
-        font-weight: bold;
-        text-align: right;
-      }
-    </style>
-    
+<style>
+  .reviews-scroll-wrapper {
+    overflow-x: auto;
+    padding: 20px 0;
+  }
+
+  .reviews-scroll {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+  }
+
+  .review-card {
+    flex: 0 0 calc(40% - 10px);  /* Shows ~2.5 cards on desktop */
+    min-width: 300px;
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  .review-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .reviewer-name {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  @media (max-width: 768px) {
+    .review-card {
+      flex: 0 0 80%;  /* Show 1 card on mobile with some padding */
+    }
+  }
+
+  /* Optional: Smooth scrolling */
+  .reviews-scroll-wrapper {
+    scroll-snap-type: x mandatory;
+  }
+
+  .review-card {
+    scroll-snap-align: start;
+  }
+
+  /* Hide scrollbar (optional, Webkit browsers) */
+  .reviews-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+</style>
