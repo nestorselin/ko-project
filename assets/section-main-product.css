@@ -232,6 +232,7 @@ product-info {
 .product__info-container .product__description{
   font-size: 14px;
   color: var(--mid-gray);
+  margin-bottom: 40px;
 }
 
 .product__text {
