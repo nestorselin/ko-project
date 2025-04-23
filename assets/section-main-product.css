@@ -234,9 +234,12 @@ product-info {
   margin: 2.5rem 0;
 }
 
+.product__info-container .product__description{
+  font-size: 14px;
+}
+
 .product__text {
   margin-bottom: 0;
-  font-size: 14px;
 }
 
 a.product__text {
