@@ -50,11 +50,60 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "reviews_hG87Nf": {
+      "type": "reviews",
+      "blocks": {
+        "review_mL47An": {
+          "type": "review",
+          "settings": {
+            "review_text": "<p>Lava Ring has an incredible texture — like frozen energy. It really feels like more than just a piece of jewelry; it’s a concept you wear. The design is outstanding.</p>",
+            "reviewer_name": "Olena K., Berlin"
+          }
+        },
+        "review_R6KYjg": {
+          "type": "review",
+          "settings": {
+            "review_text": "<p>Rock Pendant is a true piece of art. I love the texture, it catches the eye but is still very wearable. Shipping was fast, and the eco-packaging was a nice touch.</p>",
+            "reviewer_name": "Jonas W., Hamburg"
+          }
+        },
+        "review_nYpjTa": {
+          "type": "review",
+          "settings": {
+            "review_text": "<p>Garden Choker looks futuristic yet natural. It’s so lightweight I forget I’m wearing it. I got so many compliments at the event!</p>",
+            "reviewer_name": "Tania M., Vienna"
+          }
+        },
+        "review_aqmjNB": {
+          "type": "review",
+          "settings": {
+            "review_text": "<p>Sparkling Ring is minimal and delicate — perfect for everyday wear. I easily adjusted it to fit my finger, and it feels super comfortable.</p>",
+            "reviewer_name": "Nora P., Paris"
+          }
+        },
+        "review_XTTLTy": {
+          "type": "review",
+          "settings": {
+            "review_text": "<p>I was surprised by how lightweight and comfortable the Formula Bracelet is. It looks so futuristic, like something from another dimension. I'm genuinely impressed.</p>",
+            "reviewer_name": "Alex R., Amsterdam"
+          }
+        }
+      },
+      "block_order": [
+        "review_mL47An",
+        "review_R6KYjg",
+        "review_nYpjTa",
+        "review_aqmjNB",
+        "review_XTTLTy"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "video_section_DV3wa9",
     "all_collections_nMwnhe",
-    "featured_collection"
+    "featured_collection",
+    "reviews_hG87Nf"
   ]
 }
