@@ -1873,7 +1873,6 @@ input[type='checkbox'] {
   display: flex;
   border-radius: var(--inputs-radius);
   min-height: 30px;
-  margin-right: 20px;
 }
 
 .quantity:after {
