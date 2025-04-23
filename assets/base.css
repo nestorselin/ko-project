@@ -1199,6 +1199,8 @@ button.shopify-payment-button__button--unbranded {
 button.shopify-payment-button__button--unbranded {
   min-width: calc(12rem + var(--buttons-border-width) * 2);
   min-height: 44px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .button,
