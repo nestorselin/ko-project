@@ -672,10 +672,11 @@
           </a>
           {%- if product.metafields.custom.size_chart != blank -%}
             <div class="size-chart">
-              <p>Metafield Raw Output: {{ product.metafields.custom.size_chart.value }}</p>
+              <a href="{{ product.metafields.custom.size_chart.url }}">
+                View Size Chart
+              </a>
             </div>
           {%- endif -%}
-          
           
           </section>
       </div>
