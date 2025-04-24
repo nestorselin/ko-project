@@ -96,7 +96,7 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   display: inline-block;
   padding: 0;
   position: absolute;
-  top: 34px;
+  top: 30px;
   right: 0px;
   color: rgb(var(--color-foreground));
   background-color: transparent;
