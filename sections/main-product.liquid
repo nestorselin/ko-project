@@ -672,13 +672,11 @@
           </a>
           {%- if product.metafields.custom.size_chart != blank -%}
             <div class="size-chart">
-              <a href="/pages/{{ product.metafields.custom.size_chart }}">
+              <a href="{{ product.metafields.custom.size_chart.url }}">
                 View Size Chart
               </a>
             </div>
           {%- endif -%}
-          
-          
           
           </section>
       </div>
