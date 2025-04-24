@@ -671,7 +671,7 @@
             {{- 'icon-arrow.svg' | inline_asset_content -}}
           </a>
           {% if product.metafields.custom.show_size_chart == true %}
-            <a href="/pages/size-chart" class="size-chart-link">View Size Chart</a>
+            <a href="/pages/size-chart" class="size-chart">View Size Chart</a>
           {% endif %}
           
           </section>
@@ -748,7 +748,7 @@
 </product-info>
 
 <style>
-  .size-chart a{
+  .size-chart{
     color: #000000;
     text-decoration: underline;
     text-underline-offset: 3px;
