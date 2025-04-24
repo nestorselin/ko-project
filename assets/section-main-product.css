@@ -689,10 +689,9 @@ a.product__text {
 }
 
 .product-media-modal__toggle {
-  background-color: rgb(var(--color-background));
-  border: 0.1rem solid rgba(var(--color-foreground), 0.1);
-  border-radius: 50%;
-  color: rgba(var(--color-foreground), 0.55);
+  background-color: unset; 
+  border: none;
+  color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -702,7 +701,7 @@ a.product__text {
   position: fixed;
   z-index: 2;
   top: 2rem;
-  width: 4rem;
+  font-size: 14px;
 }
 
 .product-media-modal__content .deferred-media {
