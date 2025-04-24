@@ -689,9 +689,6 @@ a.product__text {
 }
 
 .product-media-modal__toggle {
-  background-color: rgb(var(--color-background));
-  border: 0.1rem solid rgba(var(--color-foreground), 0.1);
-  border-radius: 50%;
   color: rgba(var(--color-foreground), 0.55);
   display: flex;
   align-items: center;
@@ -702,7 +699,7 @@ a.product__text {
   position: fixed;
   z-index: 2;
   top: 2rem;
-  width: 4rem;
+  font-size: 14px;
 }
 
 .product-media-modal__content .deferred-media {
