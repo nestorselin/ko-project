@@ -76,16 +76,7 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   align-items: center;
 }
 
-@media screen and (max-width: 749px) {
-  .drawer__header {
-    padding: 20px 0;
-  }
 
-  .drawer__close{
-    top: 24px;
-  }
-  
-}
 
 .drawer__heading {
   margin: 0;
@@ -103,6 +94,17 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   border: none;
   cursor: pointer;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 749px) {
+  .drawer__header {
+    padding: 20px 0;
+  }
+
+  .drawer__close{
+    top: 24px;
+  }
+  
 }
 
 .cart-drawer__warnings .drawer__close {
