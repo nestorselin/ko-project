@@ -670,7 +670,10 @@
             {{ 'products.product.view_full_details' | t }}
             {{- 'icon-arrow.svg' | inline_asset_content -}}
           </a>
-
+          {% if product.metafields.custom.show_size_chart == true %}
+            <a href="/pages/size-chart" class="size-chart-link">View Size Chart</a>
+          {% endif %}
+          
           </section>
       </div>
     </div>
