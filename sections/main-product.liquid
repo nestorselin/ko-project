@@ -670,13 +670,13 @@
             {{ 'products.product.view_full_details' | t }}
             {{- 'icon-arrow.svg' | inline_asset_content -}}
           </a>
-          {%- if product.metafields.custom.size_chart != blank -%}
-            <div class="size-chart">
-              <a href="{{ product.metafields.custom.size_chart.url }}">
-                View Size Chart
-              </a>
-            </div>
-          {%- endif -%}
+          {% if product.metafields.custom.size_chart != blank %}
+            {% assign chart_page = product.metafields.custom.size_chart %}
+            {% assign page_handle = chart_page | handleize %}
+            <a href="/pages/{{ page_handle }}" class="size-chart-link" target="_blank">
+              View Size Chart
+            </a>
+          {% endif %}
           
           </section>
       </div>
