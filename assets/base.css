@@ -3575,6 +3575,6 @@ details-disclosure > details {
   height: 100%;
 }
 
-.card__heading a:after .hover-image {
+.product-card-wrapper:hover .hover-image {
   opacity: 1;
 }
