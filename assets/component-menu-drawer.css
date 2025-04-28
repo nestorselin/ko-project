@@ -227,7 +227,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   justify-content: flex-start;
   margin-bottom: 20px;
   flex-direction: column;
-  row-gap: 8px;
+  row-gap: 3px;
 }
 
 .menu-drawer .list-social:empty {
