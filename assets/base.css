@@ -3575,6 +3575,6 @@ details-disclosure > details {
   height: 100%;
 }
 
-.grid__item:hover .hover-image {
+.card__heading a:after .hover-image {
   opacity: 1;
 }
