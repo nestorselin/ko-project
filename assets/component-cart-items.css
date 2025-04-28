@@ -133,7 +133,7 @@ cart-remove-button .button {
   color: var(--mid-gray);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 750px) {
   cart-remove-button .button {
     margin-left: 14px;
   }
