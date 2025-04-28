@@ -226,6 +226,8 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer .list-social {
   justify-content: flex-start;
   margin-bottom: 20px;
+  flex-direction: column;
+  row-gap: 8px;
 }
 
 .menu-drawer .list-social:empty {
