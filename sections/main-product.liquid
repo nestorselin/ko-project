@@ -462,8 +462,10 @@
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 
                 {% if product.metafields.custom.preorder %}
-                  <div class="preorder-banner">Average order fulfillment time: 2-3 weeks.
-                    <a target="_blank" href="/pages/delivery">Learn more</a>
+                  <div class="preorder-banner">
+                    <p>Average order fulfillment time: 2-3 weeks.
+                    <a target="_blank" href="/pages/delivery">Learn more</a></p>
+
                   </div>
                 {% endif %}
                 
