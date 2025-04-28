@@ -251,18 +251,19 @@
   {%- endif -%}
 
   <div class="footer__socials">
+    <p class="follow-heading">Follow</p>
     <div class="footer__socials-list">
-    {% if settings.social_facebook != blank %}
+      {% if settings.social_facebook != blank %}
       <a href="{{ settings.social_facebook }}" target="_blank">Facebook</a>
-    {% endif %}
-    
-    {% if settings.social_instagram != blank %}
+      {% endif %}
+  
+      {% if settings.social_instagram != blank %}
       <a href="{{ settings.social_instagram }}" target="_blank">Instagram</a>
-    {% endif %}
-    
-    {% if settings.social_twitter != blank %}
+      {% endif %}
+  
+      {% if settings.social_twitter != blank %}
       <a href="{{ settings.social_twitter }}" target="_blank">X</a>
-    {% endif %}
+      {% endif %}
     </div>
   </div>
 
