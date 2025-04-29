@@ -395,7 +395,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".about-media {aspect-ratio: 4/5; object-fit: cover; max-width: 300px;}"
+      ".about-media {aspect-ratio: 4/5; object-fit: cover; max-width: 300px !important;}"
     ]
   }
 }
