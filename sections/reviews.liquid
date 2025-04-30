@@ -81,14 +81,18 @@
         padding: 20px;
         box-sizing: border-box;
         scroll-snap-align: start;
+        transition: all 0.3s ease;
     }
 
     .review-card:nth-child(odd){
         margin-top: 60px;
-        transition: all 0.3s ease;
     }
 
     .review-card:nth-child(odd):hover{
+        margin-top: 30px;
+    }
+
+    .review-card:nth-child(even):hover{
         margin-top: 30px;
     }
 
