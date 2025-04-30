@@ -118,7 +118,7 @@
         "name": "boolean",
         "category": "TRUE_FALSE"
       }
-    }, 
+    },
     {
       "key": "hover_image",
       "namespace": "custom",
