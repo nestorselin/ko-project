@@ -99,13 +99,13 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .js .menu-drawer__menu li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.2rem;
 }
 
 .menu-drawer__menu-item {
   padding: 4px 20px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .menu-drawer summary.menu-drawer__menu-item {
