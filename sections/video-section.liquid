@@ -45,7 +45,7 @@
         <p>Please upload a video from the section settings.</p>
       {% endif %}
         <div class="video-text">
-          {{ section.settings.video_text }}
+          {{ section.settings.video_text }}çç
         </div>
       {% if section.settings.button_text != blank and section.settings.button_link != blank %}
         <div class="video-overlay">
@@ -89,6 +89,18 @@
 
       .video-button::after{
         box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text),var(--border-opacity)),0 0 0 var(--buttons-border-width) #ffffff; 
+      }
+
+      .video-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.5;
       }
 
       @media screen and (max-width: 749px) {
