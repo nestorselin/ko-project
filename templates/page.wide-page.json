@@ -1,0 +1,11 @@
+{
+  "name": "About Page",
+  "sections": {
+    "main": {
+      "type": "wide-page-section"
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
