@@ -44,7 +44,9 @@
       {% else %}
         <p>Please upload a video from the section settings.</p>
       {% endif %}
-    
+        <div class="video-text">
+          {{ section.settings.video_text }}
+        </div>
       {% if section.settings.button_text != blank and section.settings.button_link != blank %}
         <div class="video-overlay">
           <a href="{{ section.settings.button_link }}" class="button video-button">{{ section.settings.button_text }}</a>
