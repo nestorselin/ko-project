@@ -461,12 +461,12 @@
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 
-                {% if product.metafields.custom.preorder %}
+                
                   <div class="preorder-banner">
                     <p><a target="_blank" href="/pages/about">Sustainably made</a> for conscious living.</p>
-                    <p>Average order fulfillment time: 2-3 weeks. <a target="_blank" href="/pages/delivery">Learn more</a></p>
+                    {% if product.metafields.custom.preorder %}<p>Average order fulfillment time: 2-3 weeks. <a target="_blank" href="/pages/delivery">Learn more</a></p>{% endif %}
                   </div>
-                {% endif %}
+                
                 
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
