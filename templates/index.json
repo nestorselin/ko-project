@@ -12,7 +12,7 @@
     "video_section_DV3wa9": {
       "type": "video-section",
       "settings": {
-        "video": "shopify://files/videos/main.mp4",
+        "video": "shopify://files/videos/1.mp4",
         "video_text": "<p>3D-born.<br/>Hand-finished.<br/>Designed to be felt.</p>",
         "button_text": "View all",
         "button_link": "shopify://collections/all"
