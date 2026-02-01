@@ -462,17 +462,18 @@
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 
                 
-                 <div class="preorder-banner">
+<div class="preorder-banner">
   {% if product.tags contains 'in_stock_fast' %}
-    <p>
+    <p style="font-size: 13px; color: #000; opacity: 0.7;">
       <strong>Ready to ship</strong> · Ships in 5–10 days
     </p>
   {% elsif product.tags contains 'made_to_order' %}
-    <p>
+    <p style="font-size: 13px; color: #000; opacity: 0.7;">
       <strong>Made to order</strong> · Ships in 2–3 weeks
     </p>
   {% endif %}
 </div>
+
                 
                 
               {%- when 'buy_buttons' -%}
